@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         bat 'Echo "Building"'
+        writeFile(file: 'FirstFile', text: 'helloworld')
       }
     }
 
