@@ -23,6 +23,7 @@ pipeline {
     stage('Release') {
       steps {
         bat 'Echo "Releasing to App Server"'
+        bat 'echo "test"'
       }
     }
 
